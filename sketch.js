@@ -50,19 +50,41 @@ let img;
 
 function preload() {
   gif_paths = [];
-  gif_paths.push("assets/1.gif");
-  gif_paths.push("assets/2.gif");
-  gif_paths.push("assets/3.gif");
-  gif_paths.push("assets/4.gif");
-  gif_paths.push("assets/5.gif");
-  gif_paths.push("assets/6.gif");
-  n_gifs = 6;
+
+  gif_paths.push("assets/couch_1.gif");
+  gif_paths.push("assets/orange_1.gif");
+  gif_paths.push("assets/plant_2.gif");
+  gif_paths.push("assets/sink_2.gif");
+  gif_paths.push("assets/window_2.gif");
+  gif_paths.push("assets/bed_1.gif");
+  gif_paths.push("assets/couch_2.gif");
+  gif_paths.push("assets/orange_2.gif");
+  gif_paths.push("assets/shelf_1.gif");
+  gif_paths.push("assets/tea_1.gif");
+  gif_paths.push("assets/bed_2.gif");
+  gif_paths.push("assets/couch_3.gif");
+  gif_paths.push("assets/orange_3.gif");
+  gif_paths.push("assets/shelf_2.gif");
+  gif_paths.push("assets/tea_2.gif");
+  gif_paths.push("assets/bed_3.gif");
+  gif_paths.push("assets/desk_1.gif");
+  gif_paths.push("assets/orange_4.gif");
+  gif_paths.push("assets/shelf_3.gif");
+  gif_paths.push("assets/tea_3.gif");
+  gif_paths.push("assets/bed_4.gif");
+  gif_paths.push("assets/hall.gif");
+  gif_paths.push("assets/plant_1.gif");
+  gif_paths.push("assets/sink_1.gif");
+  gif_paths.push("assets/window_1.gif");
+
+  n_gifs = 25;
 
   gifs = [];
   console.log("loading gifs...");
 
   for (var i = 0; i < n_gifs; i++) {
     var img = createImg(gif_paths[i]);
+    img.hide();
     gifs.push(img);
   }
 
@@ -73,25 +95,22 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);  
   frameRate(24);
-  imageMode(CENTER);
-  // screen = createVideo(video_paths[0]);
-  // screen.size(3840);
-  // screen.hide(); // by default video shows up in separate dom
-  // // element. hide it and draw it to the canvas
-  // // instead
+  gifs[cur].show(0);
 }
 
 function draw() {
-  // background(255);
-  // img = createImg(gif_paths[cur]);
-  // imageMode(CENTER);
+  background(255);
+  imageMode(CENTER);
   // img.position(windowWidth/2, windowHeight/2);
   // image(img, windowWidth/2, windowHeight/2);
-  // if (width/height > 3860/2160) {
-  //   image(videos[cur], width/2, height/2, width, width*2160/3860); // draw the video frame to canvas
-  // } else {
-  //   image(videos[cur], width/2, height/2, height*3860/2160, height); // draw the video frame to canvas
-  // }
+  gifs[cur].position(0, 0);
+  if (width/height > 3860/2160) {
+    gifs[cur].size(width, width*2160/3860);
+    // image(gifs[cur], width/2, height/2, width, width*2160/3860); // draw the video frame to canvas
+  } else {
+    gifs[cur].size(height*3860/2160, height);
+    // image(gifs[cur], width/2, height/2, height*3860/2160, height); // draw the video frame to canvas
+  }
 }
 
 function mousePressed() {
@@ -110,8 +129,9 @@ function playNewVideo() {
   // videos[newv].loop();
   // videos[cur].pause();
   // cur = newv;
-
-  cur = (cur+1)%6;
+  gifs[cur].hide();
+  cur = (cur+1)%n_gifs;
+  gifs[cur].show();
 }
 
 function windowResized() {
