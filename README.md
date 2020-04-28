@@ -1,1 +1,1 @@
-(documentation)[https://courses.ideate.cmu.edu/60-461/s2020/]
+[documentation](https://courses.ideate.cmu.edu/60-461/s2020/)
