@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="sketch2.js"></script> 
+
+<style>
+
+.snaps {
+  position:absolute;
+  width: 100%;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+.back {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+}
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 2000ms, opacity 2000ms;
+}
+
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 2000ms;
+}
+
+
+    .title {  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+    }
+
+    img {
+/*        animation: fadeIn ease 5s;
+        -webkit-animation: fadeIn ease 5s;
+        -moz-animation: fadeIn ease 5s;
+        -o-animation: fadeIn ease 5s;
+        -ms-animation: fadeIn ease 5s;*/
+        z-index: -1;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+    }
+
+        @keyframes fadeOut {
+      0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+
+    @-moz-keyframes fadeOut {
+      0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+
+    @-webkit-keyframes fadeOut {
+      0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+
+    @-o-keyframes fadeOut {
+      0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+      }
+    }
+
+    @-ms-keyframes fadeOut {
+      0% {
+        opacity:1;
+      }
+      100% {
+        opacity:0;
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="button" class="back" style="z-index: 100">
+  <div id="title" class="title back" style="z-index:100;position:absolute; padding:0px; color:rgba(0, 0, 0);">
+
+    <span style="font-size:30px;position:relative;top:5px;padding:0.5px;">r</span>
+    <span style="font-size:29px;position:relative;top:0px;padding:1.2px;">e</span>
+    <span style="font-size:27px;position:relative;top:-3px;padding:1.9px;">f</span>
+    <span style="font-size:26px;position:relative;top:-6px;padding:2.6px;">r</span>
+    <span style="font-size:24px;position:relative;top:-9px;padding:3.35px;">a</span>
+    <span style="font-size:24px;position:relative;top:-12.5px;padding:3px;">c</span>
+    <span style="font-size:24px;position:relative;top:-12.5px;padding:2.5px;">t</span>
+    <span style="font-size:24px;position:relative;top:-12.5px;padding:1px;">i</span>
+    <span style="font-size:22px;position:relative;top:-12.5px;padding:0px;">o</span>
+    <span style="font-size:21px;position:relative;top:-12.5px;padding:0px;">n</span>
+    <span style="font-size:17px;position:relative;top:-12.5px;padding:0px;">s</span>
+
+    <span style="font-size:30px;position:relative;top:-0px;padding:10px;"></span>
+
+    <span style="font-size:15px;position:relative;top:-0px;padding:0.5px;">o</span>
+    <span style="font-size:13px;position:relative;top:-3.125px;padding:1.2px;">f</span>
+
+    <span style="font-size:30px;position:relative;top:-0px;padding:10px;"></span>
+
+
+    <span style="font-size:18px;position:relative;top:-0px;padding:0.5px;">t</span>
+    <span style="font-size:19px;position:relative;top:-3.125px;padding:1.2px;">i</span>
+    <span style="font-size:17px;position:relative;top:-6.25px;padding:1.9px;">m</span>
+    <span style="font-size:16px;position:relative;top:-4px;padding:2.6px;">e</span>
+
+    <span style="font-size:30px;position:relative;top:-0px;padding:10px;"></span>
+
+
+    <span style="font-size:18px;position:relative;top:-0px;padding:0.5px;">p</span>
+    <span style="font-size:17px;position:relative;top:-3.125px;padding:1.2px;">a</span>
+    <span style="font-size:16px;position:relative;top:-6.25px;padding:1.9px;">s</span>
+    <span style="font-size:15px;position:relative;top:-9.375px;padding:2.6px;">s</span>
+    <span style="font-size:14px;position:relative;top:-12.5px;padding:3.35px;">i</span>
+    <span style="font-size:13px;position:relative;top:-12.5px;padding:3px;">n</span>
+    <span style="font-size:13px;position:relative;top:-12.5px;padding:2.5px;">g</span>
+
+    <span style="font-size:30px;position:relative;top:-0px;padding:10px;"></span>
+
+    <span style="font-size:14px;position:relative;top:-12.5px;padding:0px;">b</span>
+    <span style="font-size:14px;position:relative;top:-12.5px;padding:0px;">y</span>
+
+  </div>
+</div>
+<div id="snap0" class="snaps"><img src="assets/hall.gif"></div>
+
+<div id="snap1" class="snaps"><img src="assets/sink_1.gif"></div>
+
+<div id="snap2" class="snaps"><img src="assets/orange_1.gif"></div>
+
+<div id="snap3" class="snaps"><img src="assets/couch_1.gif"></div>
+
+<div id="snap4" class="snaps"><img src="assets/sink_2.gif""></div>
+
+
+</body>
+</html>
+
