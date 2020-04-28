@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>untitled</title>
+
 <link rel="preload" href="assets/couch_1.gif" as="image">
 <link rel="preload" href="assets/plant_2.gif" as="image">
 <link rel="preload" href="assets/tea_1.gif" as="image">
@@ -27,7 +28,6 @@
 <link rel="preload" href="assets/tea_3.gif" as="image">
 <link rel="preload" href="assets/bed_4.gif" as="image">
 <link rel="preload" href="assets/plant_1.gif" as="image">
-<link rel="preload" href="assets/sink_1.gif" as="image">
 <link rel="preload" href="assets/window_1.gif" as="image">
 
 
@@ -39,6 +39,27 @@
 body {
   margin: 0;
   background-color: rgb(184, 181, 173);
+}
+
+a {
+  color: white;
+  opacity: 0.9;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .gif {
@@ -60,19 +81,19 @@ body {
 }
 
 /* Closable button inside the expanded image */
-.tog {
+.menu {
   position: fixed;
   top: 10px;
   right: 10px;
   color: white;
   opacity: 0.9;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   z-index: 100;
 }
 
 .content {
-  padding-top: 40px;
+/*  padding-top: 40px; */
 }
 
 /* The grid: Four equal columns that floats next to each other */
@@ -169,10 +190,15 @@ body {
 <body>
 
 <div class="title">
-  untitled (April - May 2020)
+  temporarily <br> at <br> home
 </div>
 
-<span onclick="toggleView()" class='tog'>alt.</span> 
+<span onclick="toggleView()" class='menu'>
+  <span>alt. </span>
+  &nbsp;
+  <span><a href="https://github.com/joyceeexinyiwang/person_in_time">doc</a></span>
+</span> 
+
 
 <div id="scrollthru" class="scroll_content">
   <img class="gif" style="" src="assets/couch_1.gif">
@@ -199,7 +225,6 @@ body {
   <img class="gif" style="" src="assets/tea_3.gif">
   <img class="gif" style="" src="assets/bed_4.gif">
   <img class="gif" style="" src="assets/plant_1.gif">
-  <img class="gif" style="" src="assets/sink_1.gif">
   <img class="gif" style="" src="assets/window_1.gif">
 </div>
 
