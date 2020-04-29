@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>untitled</title>
+<title>a momentary stay</title>
 
 <link rel="preload" href="assets/couch_1.gif" as="image">
 <link rel="preload" href="assets/plant_2.gif" as="image">
@@ -83,13 +83,15 @@ a:active {
 /* Closable button inside the expanded image */
 .menu {
   position: fixed;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
   color: white;
   opacity: 0.9;
   font-size: 12px;
   cursor: pointer;
   z-index: 100;
+  text-align: right;
+
 }
 
 .content {
@@ -190,12 +192,14 @@ a:active {
 <body>
 
 <div class="title">
-  temporarily <br> at <br> home
+    a <br>
+    &nbsp; momentary <br> 
+    stay
 </div>
 
-<span onclick="toggleView()" class='menu'>
-  <span>alt. </span>
-  &nbsp;
+<span class='menu'>
+  <span onclick="toggleView()">alt. view</span>
+  <br>
   <span><a href="https://github.com/joyceeexinyiwang/person_in_time">doc</a></span>
 </span> 
 
