@@ -1,6 +1,10 @@
 # a momentary stay
 
-_Snap shots of my transient, solitary body in my quarantine home._ 
+###### [Full work](https://joycewang.me/person_in_time/)
+
+_During quarantine, Joyce camped out in my friend's empty apartment. She created this series of poignant self-portraits, treading lightly in her temporary quarters._
+
+_In these snap shots, her body is keyed out to create "windows," where two videos of the same view in different time scales are overlaid._
 
 ![bed](/assets/bed_1.gif)
 
@@ -8,11 +12,8 @@ _Snap shots of my transient, solitary body in my quarantine home._
 
 ![orange](/assets/orange_1.gif)
 
-Project for Experimental Capture (Professor [Golan Levin](https://twitter.com/golan))  
-April-May 2020  
-[documentation on course website](https://courses.ideate.cmu.edu/60-461/s2020/xinyiwandrew-cmu-edu/04/27/joyce-final/)  
-share on [Twitter](https://twitter.com/golan/status/1258457592868765696)!  
-This work lives on [this webpage] (https://joycewang.me/person_in_time/). In these snap shots, my body is keyed out to create windows, where two videos of the same view in different time scales are overlaid.
+###### Project for Experimental Capture (Professor [Golan Levin](https://twitter.com/golan)), April-May 2020  
+###### [Documentation on course website](https://courses.ideate.cmu.edu/60-461/s2020/xinyiwandrew-cmu-edu/04/27/joyce-final/)  
 
 -----
 
@@ -41,8 +42,13 @@ In this project, I lean into the distance between my body and my temporary home.
 ![p2](/doc/process2.png)
 
 ## Inspirations
-- In Search of Lost Time, novel by Marcel Proust
+- _In Search of Lost Time_, novel by Marcel Proust
 - “The Figure A Poem Makes” by Robert Frost
-- 4/51 Dolna St and Headache by Aneta Grzeszykowska
-- Three Transitions (1973) by Peter Campus
+- [_4/51 Dolna St and Headache_](http://artmuseum.pl/en/filmoteka/praca/grzeszykowska-aneta-smaga-jan-dolna-451?age18=true) by Aneta Grzeszykowska
+- [_Three Transitions_](https://www.youtube.com/watch?v=Ar99AfOJ2o8) (1973) by Peter Campus
+
+------
+
+_Share on [Twitter](https://twitter.com/golan/status/1258457592868765696)!_
+
 
