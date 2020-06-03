@@ -2,7 +2,7 @@
 
 ###### [Full work](https://joycewang.me/person_in_time/)
 
-_During quarantine, Joyce camped out in my friend's empty apartment. She created this series of poignant self-portraits, treading lightly in her temporary quarters._
+_During quarantine, Joyce camped out in her friend's empty apartment. She created this series of poignant self-portraits, treading lightly in her temporary quarters._
 
 _In these snap shots, her body is keyed out to create "windows," where two videos of the same view in different time scales are overlaid._
 
